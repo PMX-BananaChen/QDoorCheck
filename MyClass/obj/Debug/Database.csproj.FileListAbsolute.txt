@@ -1,0 +1,5 @@
+E:\SherryProject\E-ScoreCard\Database\bin\Debug\Database.dll
+E:\SherryProject\E-ScoreCard\Database\bin\Debug\Database.pdb
+E:\SherryProject\E-ScoreCard\Database\obj\Debug\Database.dll
+E:\SherryProject\E-ScoreCard\Database\obj\Debug\Database.pdb
+E:\SherryProject\E-ScoreCard\Database\obj\Debug\Database.csprojResolveAssemblyReference.cache

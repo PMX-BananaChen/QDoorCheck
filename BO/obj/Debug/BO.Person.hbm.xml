@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="BO.Person,BO" table="Person" batch-size="10" lazy="true">
+    <id name="Sid" column="sid" type="Guid" unsaved-value="00000000-0000-0000-0000-000000000000">
+      <generator class="guid" />
+    </id>
+    <property name="CardNo" column="cardNo" type="string" length="50" unique="true" />
+    <property name="WorkNo" column="workNo" type="string" length="50" unique="true"/>
+    <property name="PersonName" column="personName" type="string" length="50" />
+    <property name="Depart" column="depart" type="string" length="50"/>
+    <property name="Job" column="job" type="string" length="50" />
+    <property name="IsActive" column="isActive" type="Boolean" />
+    <property name="AddTime" column="addTime" type="DateTime" not-null="true" />
+    <property name="PhotoData" column="photo" type="binary" not-null="false" />
+    <bag name="Authorities" table="authority" lazy="false" inverse="true">
+      <key  column="personId"></key>
+      <one-to-many class="BO.Authority,BO" not-found="ignore"/>
+    </bag>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SettingRoot name="DefaultArea">
+  <Section name="DefaultArea">
+    <Item name="Area" value="生產車間一"></Item>
+  </Section>
+</SettingRoot>

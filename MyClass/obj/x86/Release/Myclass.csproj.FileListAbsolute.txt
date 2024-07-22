@@ -1,0 +1,8 @@
+E:\VS2013源代碼\QDoorCheck\MyClass\bin\x86\Release\Database.dll
+E:\VS2013源代碼\QDoorCheck\MyClass\bin\x86\Release\Database.pdb
+E:\VS2013源代碼\QDoorCheck\MyClass\bin\x86\Release\DiffieHellman.dll
+E:\VS2013源代碼\QDoorCheck\MyClass\bin\x86\Release\Org.Mentalis.Security.dll
+E:\VS2013源代碼\QDoorCheck\MyClass\bin\x86\Release\Renci.SshNet.dll
+E:\VS2013源代碼\QDoorCheck\MyClass\bin\x86\Release\Tamir.SharpSSH.dll
+E:\VS2013源代碼\QDoorCheck\MyClass\obj\x86\Release\Database.dll
+E:\VS2013源代碼\QDoorCheck\MyClass\obj\x86\Release\Database.pdb

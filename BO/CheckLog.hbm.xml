@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="BO.CheckLog,BO" table="checklog" batch-size="10">
+    <id name="Sid" column="sid" type="Guid" unsaved-value="00000000-0000-0000-0000-000000000000">
+      <generator class="guid" />
+    </id>
+    <property name="UserName" column="userName" type="string" not-null="false" length="50" />
+    <many-to-one name="ThisPerson" column="personId"  class="BO.Person,BO" not-null="false" lazy="false">
+    </many-to-one>
+    <many-to-one name="ThisArea" column="AreaId" class="BO.Area,BO" not-null="true" lazy="false"/>
+    <property name="CardNo" column="cardNo" type="string" length="50" not-null="false" />
+    <property name="LogContent" column="logContent" type="string" length="200" not-null="false" />
+    <property name="LogTime" column="logTime" type="DateTime" not-null="true" />
+  </class>
+</hibernate-mapping>

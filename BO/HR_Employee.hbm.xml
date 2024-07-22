@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="BO.HR_Employee,BO" table="Employee">
+    <id name="Emp_No" column="Emp_No" type="string" >
+      <generator class="native" />
+    </id> 
+    <property name="Emp_Name" column="Emp_Name" type="string" length="50" unique="true" />
+    <property name="Emp_ID" column="Emp_ID" type="string" length="150" not-null="false" />
+    <property name="Dept" column="Dept_Name" type="string" length="150" not-null="false" />
+    <property name="Job" column="Emp_Title_Name" type="string" length="150" not-null="false" />  
+  </class>
+</hibernate-mapping>

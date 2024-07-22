@@ -1,0 +1,4 @@
+E:\SherryProject\E-ScoreCard\Database\bin\Release\Database.dll
+E:\SherryProject\E-ScoreCard\Database\bin\Release\Database.pdb
+E:\SherryProject\E-ScoreCard\Database\obj\Release\Database.dll
+E:\SherryProject\E-ScoreCard\Database\obj\Release\Database.pdb

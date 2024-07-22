@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F04D7CF3-C4B2-402D-8D52-D5058F67CDA7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QDoorCheck</RootNamespace>
+    <AssemblyName>QDoorCheck</AssemblyName>
+    <ApplicationIcon>pda.ico</ApplicationIcon>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/QDoorCheck/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SortableBindingList, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Common\SortableBindingList\bin\Release\SortableBindingList.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreaMaintainFormGuard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreaMaintainFormGuard.Designer.cs">
+      <DependentUpon>AreaMaintainFormGuard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreaMaintainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreaMaintainForm.Designer.cs">
+      <DependentUpon>AreaMaintainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BI\BarcodeScan.cs" />
+    <Compile Include="BI\DefaultArea.cs" />
+    <Compile Include="CheckPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckPasswordForm.Designer.cs">
+      <DependentUpon>CheckPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckPassword.Designer.cs">
+      <DependentUpon>CheckPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonAndAuthMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonAndAuthMaintain.Designer.cs">
+      <DependentUpon>PersonAndAuthMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QDoorCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QDoorCheckForm.Designer.cs">
+      <DependentUpon>QDoorCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AreaMaintainFormGuard.resx">
+      <DependentUpon>AreaMaintainFormGuard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AreaMaintainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AreaMaintainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckPasswordForm.en.resx">
+      <DependentUpon>CheckPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckPasswordForm.resx">
+      <DependentUpon>CheckPasswordForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckPassword.en.resx">
+      <DependentUpon>CheckPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckPassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CheckPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonAndAuthMaintain.en.resx">
+      <DependentUpon>PersonAndAuthMaintain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonAndAuthMaintain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PersonAndAuthMaintain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QDoorCheckForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QDoorCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RevisePassword.en.resx">
+      <DependentUpon>RevisePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RevisePassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RevisePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectAreaForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SelectAreaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\BO.AreaUsers.datasource" />
+    <None Include="Properties\DataSources\BO.Authority.datasource">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\BO.Person.datasource" />
+    <None Include="Properties\DataSources\BO.Sys_User.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RevisePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RevisePassword.Designer.cs">
+      <DependentUpon>RevisePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectAreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectAreaForm.Designer.cs">
+      <DependentUpon>SelectAreaForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Critical.bmp" />
+    <None Include="Resources\OK.bmp" />
+    <None Include="Resources\delete_16x.ico" />
+    <None Include="Resources\ICS client.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BO\BO.csproj">
+      <Project>{18705058-47C5-4420-B23F-8DEBDBFBC85D}</Project>
+      <Name>BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pda.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BasePage\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

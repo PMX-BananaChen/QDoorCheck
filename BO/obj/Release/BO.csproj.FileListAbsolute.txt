@@ -1,0 +1,5 @@
+E:\VS2013源代碼\QDoorCheck\QDoorCheck\bin\Release\Nhibernate.Config.xml
+E:\VS2013源代碼\QDoorCheck\QDoorCheck\bin\Release\BO.dll
+E:\VS2013源代碼\QDoorCheck\QDoorCheck\bin\Release\BO.pdb
+E:\VS2013源代碼\QDoorCheck\BO\obj\Release\BO.dll
+E:\VS2013源代碼\QDoorCheck\BO\obj\Release\BO.pdb

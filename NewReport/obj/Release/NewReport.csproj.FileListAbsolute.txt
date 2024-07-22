@@ -1,0 +1,12 @@
+E:\VS2013源代碼\QDoorCheck\NewReport\obj\Release\NewReport.csprojResolveAssemblyReference.cache
+E:\VS2013源代碼\QDoorCheck\NewReport\bin\IDE.dll.config
+E:\VS2013源代碼\QDoorCheck\NewReport\bin\IDE.dll
+E:\VS2013源代碼\QDoorCheck\NewReport\bin\IDE.pdb
+E:\VS2013源代碼\QDoorCheck\NewReport\bin\Database.dll
+E:\VS2013源代碼\QDoorCheck\NewReport\bin\Tamir.SharpSSH.dll
+E:\VS2013源代碼\QDoorCheck\NewReport\bin\Renci.SshNet.dll
+E:\VS2013源代碼\QDoorCheck\NewReport\bin\Org.Mentalis.Security.dll
+E:\VS2013源代碼\QDoorCheck\NewReport\bin\DiffieHellman.dll
+E:\VS2013源代碼\QDoorCheck\NewReport\bin\Database.pdb
+E:\VS2013源代碼\QDoorCheck\NewReport\obj\Release\IDE.dll
+E:\VS2013源代碼\QDoorCheck\NewReport\obj\Release\IDE.pdb
